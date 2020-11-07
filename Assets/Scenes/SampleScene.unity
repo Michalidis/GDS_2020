@@ -172,6 +172,7 @@ MonoBehaviour:
   _activeChoice:
     SituationText: 
     CardChoices: []
+  _deckManager: {fileID: 1913717357}
   Finances: {fileID: 1123219071}
   Popularity: {fileID: 1437307471}
   Chaos: {fileID: 2114443201}
@@ -577,6 +578,7 @@ MonoBehaviour:
       Popularity: 0
       Chaos: 0
       Doubt: 0
+    Response: 
   Id: 1
 --- !u!114 &493044365
 MonoBehaviour:
@@ -970,6 +972,7 @@ MonoBehaviour:
       Popularity: 0
       Chaos: 0
       Doubt: 0
+    Response: 
   Id: 0
 --- !u!114 &759981276
 MonoBehaviour:
@@ -1024,6 +1027,7 @@ MonoBehaviour:
       Popularity: 0
       Chaos: 0
       Doubt: 0
+    Response: 
   Id: 2
 --- !u!114 &775354907
 MonoBehaviour:
@@ -1488,12 +1492,325 @@ MonoBehaviour:
         Popularity: 0.5
         Chaos: 0.5
         Doubt: 0.5
+      Response: Welcome to the job.
     - Title: No
       Effect:
         Finances: -0.5
         Popularity: 0
         Chaos: 0
         Doubt: 0
+      Response: ... and you eventually ran out of money and died.
+  - SituationText: There seems to be a server powered entirely by potatoes.
+    CardChoices:
+    - Title: Potatoes are an efficient source of energy
+      Effect:
+        Finances: 0.05
+        Popularity: 0.05
+        Chaos: 0
+        Doubt: -0.05
+      Response: Maybe you should be more careful with such statements.
+    - Title: An analysis of potato power efficiency
+      Effect:
+        Finances: 0.02
+        Popularity: -0.15
+        Chaos: 0
+        Doubt: 0
+      Response: You know you are a journalist, not a scientist, right ..?
+    - Title: Refuse to write an article
+      Effect:
+        Finances: -0.2
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: You need to do something for a living
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
+  - SituationText: 
+    CardChoices:
+    - Title: 
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
+      Response: 
+    - Title: 
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
+      Response: 
   _positionManager: {fileID: 1188233121}
   _choiceManager: {fileID: 1188233122}
   _textManager: {fileID: 2130808592}

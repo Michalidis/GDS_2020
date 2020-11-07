@@ -11,6 +11,16 @@ public class TextManager : MonoBehaviour
         Information_text.text = choice.SituationText;    
     }
 
+    public void UpdateSituationText(string text)
+    {
+        Information_text.text = text;
+    }
+
+    public void ClearSituationText()
+    {
+        Information_text.text = "";
+    }
+
     // Start is called before the first frame update
     void Start()
     {
