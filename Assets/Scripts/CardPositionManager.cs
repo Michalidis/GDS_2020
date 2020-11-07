@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class CardPositionManager : MonoBehaviour
 {
-    Vector3 VoidPosition = new Vector3(-1000, -1000, -1000);
+    Vector3 VoidPosition = new Vector3(80, -448, 0);
     public GameObject[] cards;
     public GameObject[] card_positions_3;
     public GameObject[] card_positions_2;
@@ -18,7 +19,7 @@ public class CardPositionManager : MonoBehaviour
     {
         for (int i = 0; i < card_positions_3.Length; i++)
         {
-            cards[i].transform.position = card_positions_3[i].transform.position;
+            cards[i].transform.DOMove(card_positions_3[i].transform.position, 0.75f, true);
         }
     }
 
@@ -26,7 +27,7 @@ public class CardPositionManager : MonoBehaviour
     {
         for (int i = 0; i < card_positions_2.Length; i++)
         {
-            cards[i].transform.position = card_positions_2[i].transform.position;
+            cards[i].transform.DOMove(card_positions_2[i].transform.position, 0.75f, true);
         }
     }
 
@@ -46,7 +47,7 @@ public class CardPositionManager : MonoBehaviour
     {
         for (int i = 0; i < cards.Length; i++)
         {
-            cards[i].transform.position = VoidPosition;
+            cards[i].transform.DOMove(VoidPosition, 0.75f, true);
         }
     }
 

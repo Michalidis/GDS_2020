@@ -34,7 +34,7 @@ public class CardScript : MonoBehaviour
         // Scale and rotate the card
         transform.DOScale(new Vector3(1.1f, 1.1f, 1.0f), 0.75f);
         float rotateZ = Id == 0 ? 3.0f : -3.0f;// Id == 2 ? -2.5f : Random.Range(0, 1) > 0 ? 2.5f : -2.5f;
-        if (Id == 1 && GameObject.Find("Game").GetComponent<Stats>()._activeChoice.CardChoices.Length == 3)
+        if (Id == 1 && GameObject.Find("Game").GetComponent<Stats>()._activeChoice != null && GameObject.Find("Game").GetComponent<Stats>()._activeChoice.CardChoices.Length == 3)
         {
             rotateZ = 0.0f;
         }

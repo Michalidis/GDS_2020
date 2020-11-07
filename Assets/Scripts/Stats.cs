@@ -40,7 +40,7 @@ public class Stats : MonoBehaviour
         if (Input.anyKey)
         {
             expectingInput = false;
-            float delay = Mathf.Max(2.5f - timeSpentExpectingInput, 0.0f);
+            float delay = Mathf.Max(2.0f - timeSpentExpectingInput, 0.0f);
             StartCoroutine(PrepareNewChoice(delay));
         }
     }
@@ -54,10 +54,10 @@ public class Stats : MonoBehaviour
         
         Effect effect = _activeChoice.CardChoices[cardId].Effect;
 
-        DOTween.To(() => Finances.value, x => Finances.value = x, Finances.value + effect.Finances, 2.5f);
-        DOTween.To(() => Popularity.value, x => Popularity.value = x, Popularity.value + effect.Popularity, 2.5f);
-        DOTween.To(() => Chaos.value, x => Chaos.value = x, Chaos.value + effect.Chaos, 2.5f);
-        DOTween.To(() => Doubt.value, x => Doubt.value = x, Doubt.value + effect.Doubt, 2.5f);
+        DOTween.To(() => Finances.value, x => Finances.value = x, Finances.value + effect.Finances, 2.0f);
+        DOTween.To(() => Popularity.value, x => Popularity.value = x, Popularity.value + effect.Popularity, 2.0f);
+        DOTween.To(() => Chaos.value, x => Chaos.value = x, Chaos.value + effect.Chaos, 2.0f);
+        DOTween.To(() => Doubt.value, x => Doubt.value = x, Doubt.value + effect.Doubt, 2.0f);
 
         string response = _activeChoice.CardChoices[cardId].Response;
         _activeChoice = null;
@@ -73,7 +73,7 @@ public class Stats : MonoBehaviour
         }
         else
         {
-            StartCoroutine(PrepareNewChoice(2.5f));
+            StartCoroutine(PrepareNewChoice(2.0f));
         }
     }
 
@@ -82,7 +82,7 @@ public class Stats : MonoBehaviour
         yield return new WaitForSeconds(delay); // Wait for animations to finish
         if (CheckStatsForDefeat())
         {
-            yield return 1;
+            yield break;
         }
 
         Choice choice = _deckManager.GetRandomUnseenChoice();
@@ -90,7 +90,7 @@ public class Stats : MonoBehaviour
         {
             // This should not happen anymore when the final ending is implemented
             _deckManager._textManager.UpdateSituationText("Out of articles . . .");
-            yield return 2;
+            yield break;
         }
 
         _deckManager.ActivateChoice(choice);
