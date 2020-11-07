@@ -551,8 +551,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.6, y: 40.87}
-  m_SizeDelta: {x: 532.59546, y: 60.59636}
+  m_AnchoredPosition: {x: 4.6, y: 14.628}
+  m_SizeDelta: {x: 532.59546, y: 113.13463}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &493044361 stripped
 GameObject:
@@ -1499,7 +1499,7 @@ MonoBehaviour:
         Popularity: 0
         Chaos: 0
         Doubt: 0
-      Response: ... and you eventually ran out of money and died.
+      Response: ... and you eventually ran out of money.
   - SituationText: There seems to be a server powered entirely by potatoes.
     CardChoices:
     - Title: Potatoes are an efficient source of energy
@@ -1523,22 +1523,24 @@ MonoBehaviour:
         Chaos: 0
         Doubt: 0
       Response: You need to do something for a living
-  - SituationText: 
+  - SituationText: World gets flooded by a documented case of a pregnant male Mr.
+      Lee Mingwei.
     CardChoices:
-    - Title: 
+    - Title: Scientists are trying to make living without women possible
       Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
+        Finances: -0.05
+        Popularity: -0.08
+        Chaos: 0.05
+        Doubt: 0.1
+      Response: Life without women? When you wake up, you feel stupid for even thinking
+        it was a good idea.
+    - Title: Men around the world are trying to become pregnant
       Effect:
-        Finances: -0.5
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: 
+        Finances: 0.05
+        Popularity: 0.08
+        Chaos: 0.02
+        Doubt: -0.01
+      Response: Your article proves to be right.
   - SituationText: 
     CardChoices:
     - Title: 
