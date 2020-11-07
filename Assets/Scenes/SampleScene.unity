@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4160044}
+  - component: {fileID: 4160045}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -156,6 +157,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4160045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4160043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cef8c0ba63607b343b9840f84ad24c75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Finances: {fileID: 1123219071}
+  Popularity: {fileID: 1437307471}
+  Chaos: {fileID: 2114443201}
+  Doubt: {fileID: 376654879}
 --- !u!1 &89875989
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +455,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1851583233134344538, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
   m_PrefabInstance: {fileID: 313732609}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &376654879 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4324277473545084002, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
+  m_PrefabInstance: {fileID: 212315507}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &426327662 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
@@ -911,6 +939,17 @@ RectTransform:
   m_AnchoredPosition: {x: -160, y: -91.938995}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1123219071 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4324277473545084002, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
+  m_PrefabInstance: {fileID: 4324277473958814221}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1182170518 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1851583233134344538, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
@@ -1089,6 +1128,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1851583233134344538, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
   m_PrefabInstance: {fileID: 1249412954}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1437307471 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4324277473545084002, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
+  m_PrefabInstance: {fileID: 1732888009}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1689679881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,8 +1328,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Choices:
-  - SituationText: You are provided with an opportunity to become a journalist.      
-      Do you accept?
+  - SituationText: You are provided with an opportunity to become a journalist for
+      a successful company. Do you accept?
     CardChoices:
     - Title: Yes
     - Title: No
@@ -1352,6 +1402,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2114443201 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4324277473545084002, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
+  m_PrefabInstance: {fileID: 752248940}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2130808590
 GameObject:
   m_ObjectHideFlags: 0
