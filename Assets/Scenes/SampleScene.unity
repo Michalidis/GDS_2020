@@ -151,6 +151,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1188233120}
+  - {fileID: 1913717356}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -440,6 +441,11 @@ RectTransform:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
   m_PrefabInstance: {fileID: 4324277473958814221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &493044361 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1851583233134344537, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
+  m_PrefabInstance: {fileID: 313732609}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
@@ -779,6 +785,16 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
   m_PrefabInstance: {fileID: 752248940}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &759981272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1851583233134344537, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
+  m_PrefabInstance: {fileID: 1851583232101631180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &775354903 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1851583233134344537, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
+  m_PrefabInstance: {fileID: 1249412954}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &826644890
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,6 +845,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1188233120}
   - component: {fileID: 1188233121}
+  - component: {fileID: 1188233122}
   m_Layer: 0
   m_Name: CardManager
   m_TagString: Untagged
@@ -862,6 +879,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d811b8afb1c3f3c49bd0e560be5d0321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cards:
+  - {fileID: 759981272}
+  - {fileID: 493044361}
+  - {fileID: 775354903}
+  card_positions_3:
+  - {fileID: 826644890}
+  - {fileID: 1689679881}
+  - {fileID: 685149170}
+  card_positions_2:
+  - {fileID: 118692765}
+  - {fileID: 89875989}
+--- !u!114 &1188233122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188233119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf495d93e87de3438fed838b0666ca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cards:
+  - {fileID: 759981272}
+  - {fileID: 493044361}
+  - {fileID: 775354903}
 --- !u!1001 &1249412954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1109,6 +1153,57 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
   m_PrefabInstance: {fileID: 1732888009}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1913717355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1913717356}
+  - component: {fileID: 1913717357}
+  m_Layer: 0
+  m_Name: Deck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1913717356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913717355}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4160044}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1913717357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913717355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47949d7af7eb2fb49ae33de10557790c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Choices:
+  - SituationText: You are provided with an opportunity to become a journalist. Will
+      you accept?
+    CardChoices:
+    - Title: Yes
+    - Title: No
+  _positionManager: {fileID: 1188233121}
+  _choiceManager: {fileID: 1188233122}
 --- !u!1 &2035956457
 GameObject:
   m_ObjectHideFlags: 0
