@@ -169,6 +169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cef8c0ba63607b343b9840f84ad24c75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _activeChoice:
+    SituationText: 
+    CardChoices: []
   Finances: {fileID: 1123219071}
   Popularity: {fileID: 1437307471}
   Chaos: {fileID: 2114443201}
@@ -555,6 +558,55 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1851583233134344537, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
   m_PrefabInstance: {fileID: 313732609}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &493044364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493044361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbcfb943c175c544aa74abd55da175e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Card:
+    Title: 
+    Effect:
+      Finances: 0
+      Popularity: 0
+      Chaos: 0
+      Doubt: 0
+  Id: 1
+--- !u!114 &493044365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493044361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4160045}
+          m_TargetAssemblyTypeName: Stats, Assembly-CSharp
+          m_MethodName: MakeChoice
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,11 +951,109 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1851583233134344537, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
   m_PrefabInstance: {fileID: 1851583232101631180}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &759981275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759981272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbcfb943c175c544aa74abd55da175e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Card:
+    Title: 
+    Effect:
+      Finances: 0
+      Popularity: 0
+      Chaos: 0
+      Doubt: 0
+  Id: 0
+--- !u!114 &759981276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759981272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4160045}
+          m_TargetAssemblyTypeName: Stats, Assembly-CSharp
+          m_MethodName: MakeChoice
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &775354903 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1851583233134344537, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
   m_PrefabInstance: {fileID: 1249412954}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &775354906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775354903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbcfb943c175c544aa74abd55da175e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Card:
+    Title: 
+    Effect:
+      Finances: 0
+      Popularity: 0
+      Chaos: 0
+      Doubt: 0
+  Id: 2
+--- !u!114 &775354907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775354903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4160045}
+          m_TargetAssemblyTypeName: Stats, Assembly-CSharp
+          m_MethodName: MakeChoice
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &826644890
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,12 +1477,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47949d7af7eb2fb49ae33de10557790c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Stats: {fileID: 4160045}
   Choices:
   - SituationText: You are provided with an opportunity to become a journalist for
       a successful company. Do you accept?
     CardChoices:
     - Title: Yes
+      Effect:
+        Finances: 0
+        Popularity: 0.5
+        Chaos: 0.5
+        Doubt: 0.5
     - Title: No
+      Effect:
+        Finances: -0.5
+        Popularity: 0
+        Chaos: 0
+        Doubt: 0
   _positionManager: {fileID: 1188233121}
   _choiceManager: {fileID: 1188233122}
   _textManager: {fileID: 2130808592}

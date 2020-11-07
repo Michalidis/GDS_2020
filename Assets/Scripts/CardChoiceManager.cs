@@ -19,6 +19,19 @@ public class CardChoiceManager : MonoBehaviour
         }
     }
 
+    public void UpdateCardInstance(int cardId, Card card)
+    {
+        cards[cardId].GetComponent<CardScript>().Card = card;
+    }
+
+    public void ClearCardInstances()
+    {
+        for (int i = 0; i < cards.Length; i++)
+        {
+            cards[i].GetComponent<CardScript>().Card = null;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
