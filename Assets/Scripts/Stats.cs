@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class Stats : MonoBehaviour
 {
+    private float timeSpentExpectingInput;
     private bool expectingInput;
     public Choice _activeChoice;
 
@@ -33,10 +35,13 @@ public class Stats : MonoBehaviour
             return;
         }
 
+        timeSpentExpectingInput += Time.deltaTime;
+
         if (Input.anyKey)
         {
             expectingInput = false;
-            PrepareNewChoice();
+            float delay = Mathf.Max(2.5f - timeSpentExpectingInput, 0.0f);
+            StartCoroutine(PrepareNewChoice(delay));
         }
     }
 
@@ -49,10 +54,10 @@ public class Stats : MonoBehaviour
         
         Effect effect = _activeChoice.CardChoices[cardId].Effect;
 
-        Finances.value += effect.Finances;
-        Popularity.value += effect.Popularity;
-        Chaos.value += effect.Chaos;
-        Doubt.value += effect.Doubt;
+        DOTween.To(() => Finances.value, x => Finances.value = x, Finances.value + effect.Finances, 2.5f);
+        DOTween.To(() => Popularity.value, x => Popularity.value = x, Popularity.value + effect.Popularity, 2.5f);
+        DOTween.To(() => Chaos.value, x => Chaos.value = x, Chaos.value + effect.Chaos, 2.5f);
+        DOTween.To(() => Doubt.value, x => Doubt.value = x, Doubt.value + effect.Doubt, 2.5f);
 
         string response = _activeChoice.CardChoices[cardId].Response;
         _activeChoice = null;
@@ -64,18 +69,20 @@ public class Stats : MonoBehaviour
         {
             _deckManager._textManager.UpdateSituationText(response);
             expectingInput = true;
+            timeSpentExpectingInput = 0.0f;
         }
         else
         {
-            PrepareNewChoice();
+            StartCoroutine(PrepareNewChoice(2.5f));
         }
     }
 
-    public void PrepareNewChoice()
+    public IEnumerator PrepareNewChoice(float delay)
     {
+        yield return new WaitForSeconds(delay); // Wait for animations to finish
         if (CheckStatsForDefeat())
         {
-            return;
+            yield return 1;
         }
 
         Choice choice = _deckManager.GetRandomUnseenChoice();
@@ -83,7 +90,7 @@ public class Stats : MonoBehaviour
         {
             // This should not happen anymore when the final ending is implemented
             _deckManager._textManager.UpdateSituationText("Out of articles . . .");
-            return;
+            yield return 2;
         }
 
         _deckManager.ActivateChoice(choice);
