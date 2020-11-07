@@ -292,11 +292,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 92.4
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -328,11 +328,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 120
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 147
+      value: 135.81
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -357,6 +357,81 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
   m_PrefabInstance: {fileID: 212315507}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &235883493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 235883494}
+  - component: {fileID: 235883496}
+  - component: {fileID: 235883495}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &235883494
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235883493}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 752248941}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 70, y: 70}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &235883495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235883493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7e92a3183fb0dfe4da2918c5c4a46b75, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &235883496
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235883493}
+  m_CullTransparentMesh: 0
 --- !u!1001 &313732609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -364,6 +439,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 601407243}
     m_Modifications:
+    - target: {fileID: 1851583232395324673, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 130
+      objectReference: {fileID: 0}
     - target: {fileID: 1851583233134344537, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
       propertyPath: m_Name
       value: ArticleCard_2
@@ -883,11 +962,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 92.4
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -919,11 +998,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 40
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 147
+      value: 135.81
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1093,6 +1172,156 @@ RectTransform:
   m_AnchoredPosition: {x: -160, y: -91.938995}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &874443253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 874443254}
+  - component: {fileID: 874443256}
+  - component: {fileID: 874443255}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &874443254
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874443253}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1732888010}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 70, y: 70}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &874443255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874443253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 87ee23883874ae841a754bd573e321e0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &874443256
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874443253}
+  m_CullTransparentMesh: 0
+--- !u!1 &1097785336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1097785337}
+  - component: {fileID: 1097785339}
+  - component: {fileID: 1097785338}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1097785337
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097785336}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 212315508}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 70, y: 70}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1097785338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097785336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ae43c695de551424a9f5a1e5a06e8f5e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1097785339
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097785336}
+  m_CullTransparentMesh: 0
 --- !u!114 &1123219071 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4324277473545084002, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
@@ -1187,6 +1416,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 601407243}
     m_Modifications:
+    - target: {fileID: 1851583232395324673, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 130
+      objectReference: {fileID: 0}
     - target: {fileID: 1851583233134344537, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
       propertyPath: m_Name
       value: ArticleCard_3
@@ -1373,11 +1606,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 92.4
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1409,11 +1642,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -40
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 147
+      value: 135.81
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1438,6 +1671,81 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
   m_PrefabInstance: {fileID: 1732888009}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1890283472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1890283473}
+  - component: {fileID: 1890283475}
+  - component: {fileID: 1890283474}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1890283473
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890283472}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 426327662}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 70, y: 70}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1890283474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890283472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7a86c59ab05139548af75e961442b1ee, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1890283475
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890283472}
+  m_CullTransparentMesh: 0
 --- !u!1 &1913717355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,7 +1834,7 @@ MonoBehaviour:
   - SituationText: World gets flooded by a documented case of a pregnant male Mr.
       Lee Mingwei.
     CardChoices:
-    - Title: Scientists are trying to make living without women possible
+    - Title: Scientists are trying to make life without women possible
       Effect:
         Finances: -0.05
         Popularity: -0.08
@@ -1541,166 +1849,219 @@ MonoBehaviour:
         Chaos: 0.02
         Doubt: -0.01
       Response: Your article proves to be right.
-  - SituationText: 
+  - SituationText: Snowball the Monster Cat
     CardChoices:
-    - Title: 
+    - Title: Cat who was born near nuclear lab
       Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
+        Finances: 0.1
+        Popularity: 0.15
+        Chaos: 0
         Doubt: 0.5
       Response: 
-    - Title: 
+    - Title: A slightly chubby cat
       Effect:
-        Finances: -0.5
+        Finances: -0.09
+        Popularity: 0.06
+        Chaos: -0.05
+        Doubt: -0.1
+      Response: 
+    - Title: Wait until more information comes up
+      Effect:
+        Finances: -0.15
         Popularity: 0
         Chaos: 0
         Doubt: 0
       Response: 
-  - SituationText: 
+  - SituationText: Emulex Corp. share price is plummeting
     CardChoices:
-    - Title: 
+    - Title: Stock prices are manipulated
+      Effect:
+        Finances: 0.05
+        Popularity: 0.2
+        Chaos: 0.15
+        Doubt: 0.05
+      Response: 
+    - Title: Their CEO is resigning, time to buy stocks
+      Effect:
+        Finances: -0.2
+        Popularity: 0.05
+        Chaos: 0.09
+        Doubt: 0.2
+      Response: Ouch... why did I invest in it myself?
+  - SituationText: Bonsai Kitten
+    CardChoices:
+    - Title: Cultivation of kittens just like trees
+      Effect:
+        Finances: -0.1
+        Popularity: 0.11
+        Chaos: 0.07
+        Doubt: 0.15
+      Response: As soon as people have found out about the sideeffects, you have
+        been humilated by society. At least you have drawn some extra attention on
+        yourself.
+    - Title: Business with little kittens is plummeting!
+      Effect:
+        Finances: -0.22
+        Popularity: 0.1
+        Chaos: 0.08
+        Doubt: 0.07
+      Response: You yourself paid lots of money for a regular kitten...
+  - SituationText: Manbeef.com - selling human flesh for the sophisticated human
+      meat consumer
+    CardChoices:
+    - Title: The company is selling horse meat
+      Effect:
+        Finances: 0.14
+        Popularity: -0.15
+        Chaos: 0
+        Doubt: 0.03
+      Response: People still find it disgusting.
+    - Title: Website made just to "tail" people
+      Effect:
+        Finances: 0.05
+        Popularity: 0.15
+        Chaos: -0.15
+        Doubt: -0.15
+      Response: You were right and you are happy with yourself.
+    - Title: Human mean is the new chicken meat
+      Effect:
+        Finances: -0.18
+        Popularity: 0
+        Chaos: 0.2
+        Doubt: 0.11
+      Response: You can't be serious at this point.
+  - SituationText: Kaycee Nicole Swenson is dying of cancer
+    CardChoices:
+    - Title: Investigate the past of Kaycee
       Effect:
         Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
-        Popularity: 0
+        Popularity: 0.25
         Chaos: 0
+        Doubt: -0.2
+      Response: You spend lots of money and resources on investigation. People were
+        terrified to find out that she was made up by a 50-year old woman. At least
+        you got the money for investigation back.
+    - Title: Investigate the condition of Kaycee
+      Effect:
+        Finances: -0.15
+        Popularity: 0.3
+        Chaos: 0.1
         Doubt: 0
-      Response: 
-  - SituationText: 
+      Response: You have found nothing so you just copied an article of someone else
+        for the day.
+    - Title: Attention whore
+      Effect:
+        Finances: 0.5
+        Popularity: -0.22
+        Chaos: 0.3
+        Doubt: 0
+      Response: You mocked a person dying of cancer. You twisted bastard...
+  - SituationText: Vaccination in 21st century
     CardChoices:
-    - Title: 
+    - Title: Vaccines by scientists
       Effect:
         Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: 
-  - SituationText: 
-    CardChoices:
-    - Title: 
+        Popularity: -0.2
+        Chaos: 0.2
+        Doubt: 0.1
+      Response: People all around the world are becoming autistic as they are taking
+        vaccines
+    - Title: Vaccines need to be stopped!
       Effect:
         Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
+        Popularity: 0.2
+        Chaos: -0.07
+        Doubt: -0.05
+      Response: You took a huge risk, but maybe it was the right thing to do
+    - Title: Cows are wonderful animals
       Effect:
-        Finances: -0.5
-        Popularity: 0
+        Finances: -0.15
+        Popularity: 0.1
         Chaos: 0
         Doubt: 0
-      Response: 
-  - SituationText: 
+      Response: Your boss got angry for writing such article, but people liked it.
+  - SituationText: There is growing concern about the shape of Earth
     CardChoices:
-    - Title: 
+    - Title: Earth is round
+      Effect:
+        Finances: 0.05
+        Popularity: 0
+        Chaos: -0.1
+        Doubt: 0.05
+      Response: That's nothing new, but people still doubt you.
+    - Title: Earth is flat
       Effect:
         Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
+        Popularity: 0.2
+        Chaos: 0.11
+        Doubt: -0.05
+      Response: What an innovative idea! You gained some new followers
+  - SituationText: The tragedy of 9/11
+    CardChoices:
+    - Title: It was an inside job
       Effect:
-        Finances: -0.5
+        Finances: -0.05
+        Popularity: 0.1
+        Chaos: 0.25
+        Doubt: 0.1
+      Response: This got some people thinking and people are rioting.
+    - Title: An honor for those who died
+      Effect:
+        Finances: 0.1
+        Popularity: 0.1
+        Chaos: -0.15
+        Doubt: 0
+      Response: You honor the lost lives with a beautiful article
+    - Title: But what about the cows?
+      Effect:
+        Finances: -0.15
         Popularity: 0
+        Chaos: -0.05
+        Doubt: 0
+      Response: You managed to draw attention to more important matters.
+  - SituationText: Huge migration from regions affected by war
+    CardChoices:
+    - Title: Leave the borders open
+      Effect:
+        Finances: 0.05
+        Popularity: 0.08
+        Chaos: 0.2
+        Doubt: 0
+      Response: Your article encouraged people to help people migrate despite all
+        restrictions.
+    - Title: The borders should remain closed
+      Effect:
+        Finances: 0.2
+        Popularity: -0.2
         Chaos: 0
         Doubt: 0
-      Response: 
-  - SituationText: 
-    CardChoices:
-    - Title: 
+      Response: People feel offended by your opinion on human lives. But somebody
+        passes your an envelope with lots of money.
+    - Title: Bring more cows
       Effect:
         Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
-        Popularity: 0
+        Popularity: -0.25
         Chaos: 0
-        Doubt: 0
-      Response: 
-  - SituationText: 
+        Doubt: 0.25
+      Response: Your sanity is being questioned.
+  - SituationText: Cesky Sen - The hypermarket with the lowest prices
     CardChoices:
-    - Title: 
+    - Title: Encourage people
       Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
+        Finances: 0.2
+        Popularity: -0.2
+        Chaos: 0
+        Doubt: 0.05
+      Response: You encouraged people just so they could be let down. The store never
+        opened or existed in the first place
+    - Title: Discourage people
       Effect:
-        Finances: -0.5
-        Popularity: 0
+        Finances: -0.05
+        Popularity: 0.03
         Chaos: 0
         Doubt: 0
-      Response: 
-  - SituationText: 
-    CardChoices:
-    - Title: 
-      Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: 
-  - SituationText: 
-    CardChoices:
-    - Title: 
-      Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: 
-  - SituationText: 
-    CardChoices:
-    - Title: 
-      Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: 
+      Response: You have been met with wave of criticism from your coworkers, but
+        in the end they found out you were right not to encourage people.
   - SituationText: 
     CardChoices:
     - Title: 
@@ -1944,6 +2305,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 601407243}
     m_Modifications:
+    - target: {fileID: 1851583232395324673, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 130
+      objectReference: {fileID: 0}
     - target: {fileID: 1851583233134344537, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
       propertyPath: m_Name
       value: ArticleCard_1
@@ -2079,11 +2444,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 92.4
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2115,11 +2480,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -120
+      value: -150
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 147
+      value: 135.81
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -60,7 +60,7 @@ public class Stats : MonoBehaviour
         _deckManager._positionManager.MoveAllCardsAwayFromScene();
         _deckManager._textManager.ClearSituationText();
 
-        if (response != null)
+        if (response != "")
         {
             _deckManager._textManager.UpdateSituationText(response);
             expectingInput = true;
@@ -81,6 +81,7 @@ public class Stats : MonoBehaviour
         Choice choice = _deckManager.GetRandomUnseenChoice();
         if (choice == null)
         {
+            // This should not happen anymore when the final ending is implemented
             _deckManager._textManager.UpdateSituationText("Out of articles . . .");
             return;
         }
