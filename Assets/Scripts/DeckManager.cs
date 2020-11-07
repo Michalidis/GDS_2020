@@ -20,6 +20,7 @@ public class DeckManager : MonoBehaviour
     public Choice[] Choices;
     public CardPositionManager _positionManager;
     public CardChoiceManager _choiceManager;
+    public TextManager _textManager;
     Choice _activeChoice;
     public Choice ActiveChoice { 
         get {
@@ -29,6 +30,7 @@ public class DeckManager : MonoBehaviour
             _activeChoice = value;
             _positionManager.UpdateCardPosition(value);
             _choiceManager.UpdateCardText(value);
+            _textManager.UpdateSituationText(value);
         }
     }
     void ActivateChoice(Choice choice)
