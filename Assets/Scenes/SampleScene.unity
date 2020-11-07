@@ -332,7 +332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 135.81
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -630,7 +630,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.6, y: 14.628}
+  m_AnchoredPosition: {x: 4.6, y: 70}
   m_SizeDelta: {x: 532.59546, y: 113.13463}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &493044361 stripped
@@ -680,6 +680,38 @@ MonoBehaviour:
           m_TargetAssemblyTypeName: Stats, Assembly-CSharp
           m_MethodName: MakeChoice
           m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 493044364}
+          m_TargetAssemblyTypeName: CardScript, Assembly-CSharp
+          m_MethodName: onMouseEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 493044364}
+          m_TargetAssemblyTypeName: CardScript, Assembly-CSharp
+          m_MethodName: onMouseLeave
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1002,7 +1034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 135.81
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1082,6 +1114,38 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 759981275}
+          m_TargetAssemblyTypeName: CardScript, Assembly-CSharp
+          m_MethodName: onMouseEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 759981275}
+          m_TargetAssemblyTypeName: CardScript, Assembly-CSharp
+          m_MethodName: onMouseLeave
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &775354903 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1851583233134344537, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
@@ -1129,6 +1193,38 @@ MonoBehaviour:
           m_TargetAssemblyTypeName: Stats, Assembly-CSharp
           m_MethodName: MakeChoice
           m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 775354906}
+          m_TargetAssemblyTypeName: CardScript, Assembly-CSharp
+          m_MethodName: onMouseEnter
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 2
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 775354906}
+          m_TargetAssemblyTypeName: CardScript, Assembly-CSharp
+          m_MethodName: onMouseLeave
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1646,7 +1742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 135.81
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2305,9 +2401,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 601407243}
     m_Modifications:
+    - target: {fileID: 1851583232395324672, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1851583232395324673, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
       propertyPath: m_SizeDelta.x
       value: 130
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851583232395324674, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
+      propertyPath: m_Maskable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851583232395324674, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1851583233134344537, guid: 6f9da606905f98d4ebf4ffc461bba716, type: 3}
       propertyPath: m_Name
@@ -2484,7 +2592,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 135.81
+      value: 170
       objectReference: {fileID: 0}
     - target: {fileID: 4324277473545084003, guid: 03114d0799b65ca43873d939e82804fd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
