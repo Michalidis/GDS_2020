@@ -73,6 +73,11 @@ public class Stats : MonoBehaviour
 
     public void PrepareNewChoice()
     {
+        if (CheckStatsForDefeat())
+        {
+            return;
+        }
+
         Choice choice = _deckManager.GetRandomUnseenChoice();
         if (choice == null)
         {
@@ -81,5 +86,59 @@ public class Stats : MonoBehaviour
         }
 
         _deckManager.ActivateChoice(choice);
+    }
+
+    bool CheckStatsForDefeat()
+    {
+        if (Finances.value >= 1.0f)
+        {
+            _deckManager._textManager.ClearSituationText();
+            _deckManager._textManager.UpdateSituationText("You have become drunk with money and became too lazy to write more articles. After a month you find yourself homeless with a bottle of pure alcohol in your hand... completely blind.");
+            return true;
+        }
+        else if (Finances.value <= 0.0f)
+        {
+            _deckManager._textManager.ClearSituationText();
+            _deckManager._textManager.UpdateSituationText("Poverty struck you hard and you eventually die. Maybe you wanted to be too fair without any greed?");
+            return true;
+        }
+        else if (Popularity.value >= 1.0f)
+        {
+            _deckManager._textManager.ClearSituationText();
+            _deckManager._textManager.UpdateSituationText("Your boss comes to you with a scary smile on his face: \"You have made our company successful! We are number one!\". But... that also means they don't need you anymore. You have lost your job.");
+            return true;
+        }
+        else if (Popularity.value <= 0.0f)
+        {
+            _deckManager._textManager.ClearSituationText();
+            _deckManager._textManager.UpdateSituationText("You were trying to be fair and share the truth with the world. Unfortunately, truth is usually not interesting and nobody cares about your articles anymore.");
+            return true;
+        }
+        else if (Chaos.value >= 1.0f)
+        {
+            _deckManager._textManager.ClearSituationText();
+            _deckManager._textManager.UpdateSituationText("The world is in shambles as people are panicking and protesting all over the world. A bunch of burglars break into your house at night and you catch them in the act. You were killed.");
+            return true;
+        }
+        else if (Chaos.value <= 0.0f)
+        {
+            _deckManager._textManager.ClearSituationText();
+            _deckManager._textManager.UpdateSituationText("The world has become a peaceful place. A new paradise, people call it! Nobody is spreading chaos and disinformation anymore. There is no more violence. There is nothing to write articles about . . .");
+            return true;
+        }
+        else if (Doubt.value >= 1.0f)
+        {
+            _deckManager._textManager.ClearSituationText();
+            _deckManager._textManager.UpdateSituationText("People all around the world have realized that all you spread is just hatred and lies. You drink your tea during another beautiful morning, just to find out it tastes wrong. You die one day later - poisoned.");
+            return true;
+        }
+        else if (Doubt.value <= 0.0f)
+        {
+            _deckManager._textManager.ClearSituationText();
+            _deckManager._textManager.UpdateSituationText("Your articles are pure gold! Your work is globally recognized as the universal truth. There are people who dislike that... You get kidnapped in your sleep and brainwashed to spread misinformation while people still believe everything you publish. You have become someone's puppet.");
+            return true;
+        }
+
+        return false;
     }
 }
