@@ -140,7 +140,7 @@ public class Stats : MonoBehaviour
         else if (Finances.value <= 0.0f)
         {
             _deckManager._textManager.ClearSituationText();
-            _deckManager._textManager.UpdateSituationText("Poverty struck you hard and you eventually die. Maybe you should have tried taking the job?");
+            _deckManager._textManager.UpdateSituationText("Poverty struck you hard and you eventually die. Maybe this was not the best decision...");
             return true;
         }
         else if (Popularity.value >= 1.0f)
