@@ -250,6 +250,15 @@ MonoBehaviour:
         Chaos: 0.11
         Doubt: -0.05
       Response: What an innovative idea! You gained some new followers
+    - Title: My colleague Mike died trying to prove his theory by building a homemade
+        rocket which exploded right when he saw the true shape of the Earth
+      Effect:
+        Finances: -0.5
+        Popularity: 0.2
+        Chaos: 0.22
+        Doubt: -0.05
+      Response: People start thinking the space organisations sabotaged the rocket
+        not to reveal the truth
   - SituationText: The tragedy of 9/11
     CardChoices:
     - Title: It was an inside job
@@ -316,86 +325,127 @@ MonoBehaviour:
         Doubt: 0
       Response: You have been met with wave of criticism from your coworkers, but
         in the end they found out you were right not to encourage people.
-  - SituationText: 
+  - SituationText: The real truth behind the coronavirus
     CardChoices:
-    - Title: 
+    - Title: It is cured by drinking vodka with Bromhexin
       Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
+        Finances: -0.05
+        Popularity: 0.1
+        Chaos: 0.15
+        Doubt: 0
+      Response: This seems to be a perfect excuse for people to drink more vodka!
+    - Title: The tests actually insert nanochips into your brain
       Effect:
-        Finances: -0.5
+        Finances: -0.05
+        Popularity: 0.1
+        Chaos: 0.1
+        Doubt: -0.1
+      Response: This is a very controversial idea
+    - Title: Warn people about multiple hoaxing going viral, spreading lies about
+        coronavirus
+      Effect:
+        Finances: 0.1
         Popularity: 0
+        Chaos: -0.15
+        Doubt: -0.25
+      Response: This was a very successful article!
+  - SituationText: There seem to be cars fueled by electricity and have autopilot
+      option
+    CardChoices:
+    - Title: It is just another attempt of robots to hold dominion over human race
+      Effect:
+        Finances: -0.05
+        Popularity: 0
+        Chaos: 0.1
+        Doubt: 0
+      Response: People start to think about robots controlling their lives and get
+        scared
+    - Title: It is more ecologic than convential cars
+      Effect:
+        Finances: -0.05
+        Popularity: -0.05
         Chaos: 0
         Doubt: 0
-      Response: 
-  - SituationText: 
-    CardChoices:
-    - Title: 
+      Response: People are getting tired of this ecology talks
+    - Title: Poeple can finally sleep during driving cars!
       Effect:
         Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
         Popularity: 0
+        Chaos: 0.15
+        Doubt: 0
+      Response: Turns out the autopilot is not good enough and many people die sleeping
+        behind the steering wheel
+  - SituationText: New generation of telecomunication technology - 5G
+    CardChoices:
+    - Title: It transmits coronavirus
+      Effect:
+        Finances: 0.25
+        Popularity: 0.05
+        Chaos: 0.15
+        Doubt: 0.1
+      Response: People get really curious about this theory, but many scientists
+        disagree for some reason
+    - Title: This may have meni great benefits for the humankind
+      Effect:
+        Finances: -0.1
+        Popularity: 0.1
+        Chaos: -0.1
+        Doubt: 0.1
+      Response: Although you spent too much time on the research people doubt the
+        validity of this article because it is based on facts
+    - Title: Cows get superpowers from it
+      Effect:
+        Finances: 0.05
+        Popularity: 0.25
+        Chaos: 0.25
+        Doubt: -0.25
+      Response: People get crazy about this and start stealing beef to get the superpowers
+        too
+    - Title: It causes cancer
+      Effect:
+        Finances: -0.05
+        Popularity: -0.05
         Chaos: 0
         Doubt: 0
-      Response: 
-  - SituationText: 
+      Response: Everything causes cancer today so this is not really interesting
+        article
+  - SituationText: Phosphine found on Venus
     CardChoices:
-    - Title: 
+    - Title: Evidence on life found outside the Earth
+      Effect:
+        Finances: 0.15
+        Popularity: 0.1
+        Chaos: 0
+        Doubt: -0.15
+      Response: Although it was reported on the most impacting science journals,
+        people are sceptic about it
+    - Title: The Russians are building a secret base on Venus
+      Effect:
+        Finances: -0.25
+        Popularity: -0.1
+        Chaos: 0.2
+        Doubt: 0
+      Response: Russian KGB visits you, steals most of your money and writes article
+        about USA having a base on Venus
+  - SituationText: First image of a black hole is released
+    CardChoices:
+    - Title: This is an undeniable proof that scentists lie! How can you make a picture
+        of something black in a black space
+      Effect:
+        Finances: -0.05
+        Popularity: 0
+        Chaos: 0.1
+        Doubt: -0.1
+      Response: People start to think about this really hard
+    - Title: 'BREAKTHROUGH: scientists photograph a supermassive black hole in the
+        center of Messier 87 galaxy'
       Effect:
         Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
         Popularity: 0
-        Chaos: 0
+        Chaos: 0.25
         Doubt: 0
-      Response: 
-  - SituationText: 
-    CardChoices:
-    - Title: 
-      Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: 
-  - SituationText: 
-    CardChoices:
-    - Title: 
-      Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: 
+      Response: Most of the population gets scared that it will swallow up our whole
+        planetary system
   - SituationText: 
     CardChoices:
     - Title: 
