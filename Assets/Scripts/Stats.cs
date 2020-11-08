@@ -103,6 +103,7 @@ public class Stats : MonoBehaviour
         yield return new WaitForSeconds(delay); // Wait for animations to finish
         if (CheckStatsForDefeat())
         {
+            // Bad ending
             GameObject.Find("Jukebox").GetComponent<AutomaticSoundPlayer>().SilenceAllSounds();
             Image bg = GameObject.Find("Black_bg").GetComponent<Image>();
             DOTween.To(() => bg.color, x => bg.color = x, new Color(0, 0, 0, 1.0f), 1.0f);
@@ -114,8 +115,12 @@ public class Stats : MonoBehaviour
         Choice choice = _deckManager.GetRandomUnseenChoice();
         if (choice == null)
         {
-            // This should not happen anymore when the final ending is implemented
-            _deckManager._textManager.UpdateSituationText("Out of articles . . .");
+            // Good ending
+            Image bg = GameObject.Find("Black_bg").GetComponent<Image>();
+            DOTween.To(() => bg.color, x => bg.color = x, new Color(255, 255, 255, 1.0f), 1.0f);
+            _deckManager._textManager.UpdateSituationText_black("You have proven to be capable of balancing between greed and humility, popularity and infrequency, chaos and peace, doubts and certainty. You have managed to do that while also facing unexpected outcomes. Who knows what could come up next year.\nThank you for playing our game.");
+            expectingInput = false;
+            theEnd = true;
             yield break;
         }
 

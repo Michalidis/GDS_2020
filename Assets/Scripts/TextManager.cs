@@ -18,12 +18,27 @@ public class TextManager : MonoBehaviour
         StartCoroutine(_updateSituationText(text, fade_in));
     }
 
+    public void UpdateSituationText_black(string text, bool fade_in = true)
+    {
+        StartCoroutine(_updateSituationText_black(text, fade_in));
+    }
+
     private IEnumerator _updateSituationText(string text, bool fade_in = true)
     {
         Information_text.text = text;
         if (fade_in)
         {
             DOTween.To(() => Information_text.color, x => Information_text.color = x, new Color(255, 255, 255, 1.0f), 1.0f);
+        }
+        yield return new WaitForSeconds(1.0f);
+    }
+
+    private IEnumerator _updateSituationText_black(string text, bool fade_in = true)
+    {
+        Information_text.text = text;
+        if (fade_in)
+        {
+            DOTween.To(() => Information_text.color, x => Information_text.color = x, new Color(0, 0, 0, 1.0f), 1.0f);
         }
         yield return new WaitForSeconds(1.0f);
     }

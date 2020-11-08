@@ -401,14 +401,6 @@ MonoBehaviour:
         Doubt: -0.25
       Response: People get crazy about this and start stealing beef to get the superpowers
         too
-    - Title: It causes cancer
-      Effect:
-        Finances: -0.05
-        Popularity: -0.05
-        Chaos: 0
-        Doubt: 0
-      Response: Everything causes cancer today so this is not really interesting
-        article
   - SituationText: Phosphine found on Venus
     CardChoices:
     - Title: Evidence on life found outside the Earth
