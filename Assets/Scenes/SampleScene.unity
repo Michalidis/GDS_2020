@@ -2137,437 +2137,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1890283472}
   m_CullTransparentMesh: 0
---- !u!1 &1913717355
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1913717356}
-  - component: {fileID: 1913717357}
-  m_Layer: 0
-  m_Name: Deck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1913717356
+--- !u!4 &1913717356 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 767446138096455413, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+  m_PrefabInstance: {fileID: 767446137860590745}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913717355}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4160044}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1913717357
+--- !u!114 &1913717357 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 767446138096455412, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+  m_PrefabInstance: {fileID: 767446137860590745}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913717355}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47949d7af7eb2fb49ae33de10557790c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Stats: {fileID: 4160045}
-  Choices:
-  - SituationText: You are provided with an opportunity to become a journalist for
-      a successful company. Do you accept?
-    CardChoices:
-    - Title: Yes
-      Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: Welcome to the job.
-    - Title: No
-      Effect:
-        Finances: -0.5
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: ... and you eventually ran out of money.
-  - SituationText: There seems to be a server powered entirely by potatoes.
-    CardChoices:
-    - Title: Potatoes are an efficient source of energy
-      Effect:
-        Finances: 0.05
-        Popularity: 0.05
-        Chaos: 0
-        Doubt: -0.05
-      Response: Maybe you should be more careful with such statements.
-    - Title: An analysis of potato power efficiency
-      Effect:
-        Finances: 0.02
-        Popularity: -0.15
-        Chaos: 0
-        Doubt: 0
-      Response: You know you are a journalist, not a scientist, right ..?
-    - Title: Refuse to write an article
-      Effect:
-        Finances: -0.2
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: You need to do something for a living
-  - SituationText: World gets flooded by a documented case of a pregnant male Mr.
-      Lee Mingwei.
-    CardChoices:
-    - Title: Scientists are trying to make life without women possible
-      Effect:
-        Finances: -0.05
-        Popularity: -0.08
-        Chaos: 0.05
-        Doubt: 0.1
-      Response: Life without women? When you wake up, you feel stupid for even thinking
-        it was a good idea.
-    - Title: Men around the world are trying to become pregnant
-      Effect:
-        Finances: 0.05
-        Popularity: 0.08
-        Chaos: 0.02
-        Doubt: -0.01
-      Response: Your article proves to be right.
-  - SituationText: Snowball the Monster Cat
-    CardChoices:
-    - Title: Cat who was born near nuclear lab
-      Effect:
-        Finances: 0.1
-        Popularity: 0.15
-        Chaos: 0
-        Doubt: 0.5
-      Response: 
-    - Title: A slightly chubby cat
-      Effect:
-        Finances: -0.09
-        Popularity: 0.06
-        Chaos: -0.05
-        Doubt: -0.1
-      Response: 
-    - Title: Wait until more information comes up
-      Effect:
-        Finances: -0.15
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: 
-  - SituationText: Emulex Corp. share price is plummeting
-    CardChoices:
-    - Title: Stock prices are manipulated
-      Effect:
-        Finances: 0.05
-        Popularity: 0.2
-        Chaos: 0.15
-        Doubt: 0.05
-      Response: 
-    - Title: Their CEO is resigning, time to buy stocks
-      Effect:
-        Finances: -0.2
-        Popularity: 0.05
-        Chaos: 0.09
-        Doubt: 0.2
-      Response: Ouch... why did I invest in it myself?
-  - SituationText: Bonsai Kitten
-    CardChoices:
-    - Title: Cultivation of kittens just like trees
-      Effect:
-        Finances: -0.1
-        Popularity: 0.11
-        Chaos: 0.07
-        Doubt: 0.15
-      Response: As soon as people have found out about the sideeffects, you have
-        been humilated by society. At least you have drawn some extra attention on
-        yourself.
-    - Title: Business with little kittens is plummeting!
-      Effect:
-        Finances: -0.22
-        Popularity: 0.1
-        Chaos: 0.08
-        Doubt: 0.07
-      Response: You yourself paid lots of money for a regular kitten...
-  - SituationText: Manbeef.com - selling human flesh for the sophisticated human
-      meat consumer
-    CardChoices:
-    - Title: The company is selling horse meat
-      Effect:
-        Finances: 0.14
-        Popularity: -0.15
-        Chaos: 0
-        Doubt: 0.03
-      Response: People still find it disgusting.
-    - Title: Website made just to "tail" people
-      Effect:
-        Finances: 0.05
-        Popularity: 0.15
-        Chaos: -0.15
-        Doubt: -0.15
-      Response: You were right and you are happy with yourself.
-    - Title: Human meat is the new chicken meat
-      Effect:
-        Finances: -0.18
-        Popularity: 0
-        Chaos: 0.2
-        Doubt: 0.11
-      Response: You can't be serious at this point.
-  - SituationText: Kaycee Nicole Swenson is dying of cancer
-    CardChoices:
-    - Title: Investigate the past of Kaycee
-      Effect:
-        Finances: 0
-        Popularity: 0.25
-        Chaos: 0
-        Doubt: -0.2
-      Response: You spend lots of money and resources on investigation. People were
-        terrified to find out that she was made up by a 50-year old woman. At least
-        you got the money for investigation back.
-    - Title: Investigate the condition of Kaycee
-      Effect:
-        Finances: -0.15
-        Popularity: 0.3
-        Chaos: 0.1
-        Doubt: 0
-      Response: You have found nothing so you just copied an article of someone else
-        for the day.
-    - Title: Attention whore
-      Effect:
-        Finances: 0.5
-        Popularity: -0.22
-        Chaos: 0.3
-        Doubt: 0
-      Response: You mocked a person dying of cancer. You twisted bastard...
-  - SituationText: Vaccination in 21st century
-    CardChoices:
-    - Title: Vaccines by scientists
-      Effect:
-        Finances: 0
-        Popularity: -0.2
-        Chaos: 0.2
-        Doubt: 0.1
-      Response: People all around the world are becoming autistic as they are taking
-        vaccines
-    - Title: Vaccines need to be stopped!
-      Effect:
-        Finances: 0
-        Popularity: 0.2
-        Chaos: -0.07
-        Doubt: -0.05
-      Response: You took a huge risk, but maybe it was the right thing to do
-    - Title: Cows are wonderful animals
-      Effect:
-        Finances: -0.15
-        Popularity: 0.1
-        Chaos: 0
-        Doubt: 0
-      Response: Your boss got angry for writing such article, but people liked it.
-  - SituationText: There is growing concern about the shape of Earth
-    CardChoices:
-    - Title: Earth is round
-      Effect:
-        Finances: 0.05
-        Popularity: 0
-        Chaos: -0.1
-        Doubt: 0.05
-      Response: That's nothing new, but people still doubt you.
-    - Title: Earth is flat
-      Effect:
-        Finances: 0
-        Popularity: 0.2
-        Chaos: 0.11
-        Doubt: -0.05
-      Response: What an innovative idea! You gained some new followers
-  - SituationText: The tragedy of 9/11
-    CardChoices:
-    - Title: It was an inside job
-      Effect:
-        Finances: -0.05
-        Popularity: 0.1
-        Chaos: 0.25
-        Doubt: 0.1
-      Response: This got some people thinking and people are rioting.
-    - Title: An honor for those who died
-      Effect:
-        Finances: 0.1
-        Popularity: 0.1
-        Chaos: -0.15
-        Doubt: 0
-      Response: You honor the lost lives with a beautiful article
-    - Title: But what about the cows?
-      Effect:
-        Finances: -0.15
-        Popularity: 0
-        Chaos: -0.05
-        Doubt: 0
-      Response: You managed to draw attention to more important matters.
-  - SituationText: Huge migration from regions affected by war
-    CardChoices:
-    - Title: Leave the borders open
-      Effect:
-        Finances: 0.05
-        Popularity: 0.08
-        Chaos: 0.2
-        Doubt: 0
-      Response: Your article encouraged people to help people migrate despite all
-        restrictions.
-    - Title: The borders should remain closed
-      Effect:
-        Finances: 0.2
-        Popularity: -0.2
-        Chaos: 0
-        Doubt: 0
-      Response: People feel offended by your opinion on human lives. But somebody
-        passes your an envelope with lots of money.
-    - Title: Bring more cows
-      Effect:
-        Finances: 0
-        Popularity: -0.25
-        Chaos: 0
-        Doubt: 0.25
-      Response: Your sanity is being questioned.
-  - SituationText: Cesky Sen - The hypermarket with the lowest prices
-    CardChoices:
-    - Title: Encourage people
-      Effect:
-        Finances: 0.2
-        Popularity: -0.2
-        Chaos: 0
-        Doubt: 0.05
-      Response: You encouraged people just so they could be let down. The store never
-        opened or existed in the first place
-    - Title: Discourage people
-      Effect:
-        Finances: -0.05
-        Popularity: 0.03
-        Chaos: 0
-        Doubt: 0
-      Response: You have been met with wave of criticism from your coworkers, but
-        in the end they found out you were right not to encourage people.
-  - SituationText: 
-    CardChoices:
-    - Title: 
-      Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: 
-  - SituationText: 
-    CardChoices:
-    - Title: 
-      Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: 
-  - SituationText: 
-    CardChoices:
-    - Title: 
-      Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: 
-  - SituationText: 
-    CardChoices:
-    - Title: 
-      Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: 
-  - SituationText: 
-    CardChoices:
-    - Title: 
-      Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: 
-  - SituationText: 
-    CardChoices:
-    - Title: 
-      Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: 
-  - SituationText: 
-    CardChoices:
-    - Title: 
-      Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
-        Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: 
-  _positionManager: {fileID: 1188233121}
-  _choiceManager: {fileID: 1188233122}
-  _textManager: {fileID: 2130808592}
 --- !u!1 &1981624131
 GameObject:
   m_ObjectHideFlags: 0
@@ -2782,6 +2367,79 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Information_text: {fileID: 478669440}
+--- !u!1001 &767446137860590745
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4160044}
+    m_Modifications:
+    - target: {fileID: 767446138096455410, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+      propertyPath: m_Name
+      value: Deck
+      objectReference: {fileID: 0}
+    - target: {fileID: 767446138096455412, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+      propertyPath: Stats
+      value: 
+      objectReference: {fileID: 4160045}
+    - target: {fileID: 767446138096455412, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+      propertyPath: _textManager
+      value: 
+      objectReference: {fileID: 2130808592}
+    - target: {fileID: 767446138096455412, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+      propertyPath: _choiceManager
+      value: 
+      objectReference: {fileID: 1188233122}
+    - target: {fileID: 767446138096455412, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+      propertyPath: _positionManager
+      value: 
+      objectReference: {fileID: 1188233121}
+    - target: {fileID: 767446138096455413, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 767446138096455413, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 767446138096455413, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 767446138096455413, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 767446138096455413, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 767446138096455413, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 767446138096455413, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 767446138096455413, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 767446138096455413, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 767446138096455413, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 767446138096455413, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dee1dc37950d21945960553bc06e32e8, type: 3}
 --- !u!1001 &1851583232101631180
 PrefabInstance:
   m_ObjectHideFlags: 0
