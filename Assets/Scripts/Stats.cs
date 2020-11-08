@@ -36,19 +36,21 @@ public class Stats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!expectingInput)
+        Debug.Log(expectingInput);
+        Debug.Log(theEnd);
+        if (!expectingInput && !theEnd)
         {
             return;
-        }
-        else if (theEnd)
-        {
-            Application.Quit();
         }
 
         timeSpentExpectingInput += Time.deltaTime;
 
         if (Input.anyKey)
         {
+            if (theEnd)
+            {
+                Application.Quit();
+            }
             expectingInput = false;
             float delay = Mathf.Max(2.0f - timeSpentExpectingInput, 1.0f);
             _deckManager._textManager.ClearSituationText();
