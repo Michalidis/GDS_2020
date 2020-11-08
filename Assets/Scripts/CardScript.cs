@@ -6,7 +6,7 @@ using DG.Tweening;
 
 public class CardScript : MonoBehaviour
 {
-
+    public AudioSource sound;
     GameObject finances;
     GameObject popularity;
     GameObject chaos;
@@ -31,6 +31,10 @@ public class CardScript : MonoBehaviour
 
     public void onMouseEnter()
     {
+        // Play Sound
+        sound.pitch = Random.Range(0.5f, 3.0f);
+        sound.Play();
+
         // Scale and rotate the card
         transform.DOScale(new Vector3(1.1f, 1.1f, 1.0f), 0.75f);
         float rotateZ = Id == 0 ? 3.0f : -3.0f;// Id == 2 ? -2.5f : Random.Range(0, 1) > 0 ? 2.5f : -2.5f;

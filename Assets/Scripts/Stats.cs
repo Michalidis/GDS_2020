@@ -6,8 +6,12 @@ using DG.Tweening;
 
 public class Stats : MonoBehaviour
 {
+    public AudioSource crumpleSound;
+
+    private bool isIntro;
     private float timeSpentExpectingInput;
     private bool expectingInput;
+    private bool theEnd;
     public Choice _activeChoice;
 
     public DeckManager _deckManager;
@@ -25,6 +29,8 @@ public class Stats : MonoBehaviour
         Doubt.value = 0.0f;
 
         expectingInput = false;
+        isIntro = true;
+        theEnd = false;
     }
 
     // Update is called once per frame
@@ -33,6 +39,10 @@ public class Stats : MonoBehaviour
         if (!expectingInput)
         {
             return;
+        }
+        else if (theEnd)
+        {
+            Application.Quit();
         }
 
         timeSpentExpectingInput += Time.deltaTime;
@@ -55,6 +65,10 @@ public class Stats : MonoBehaviour
         
         Effect effect = _activeChoice.CardChoices[cardId].Effect;
 
+        // Play Sound
+        crumpleSound.pitch = Random.Range(0.5f, 3.0f);
+        crumpleSound.Play();
+
         DOTween.To(() => Finances.value, x => Finances.value = x, Finances.value + effect.Finances, 2.0f);
         DOTween.To(() => Popularity.value, x => Popularity.value = x, Popularity.value + effect.Popularity, 2.0f);
         DOTween.To(() => Chaos.value, x => Chaos.value = x, Chaos.value + effect.Chaos, 2.0f);
@@ -64,6 +78,12 @@ public class Stats : MonoBehaviour
         _activeChoice = null;
 
         _deckManager._positionManager.MoveAllCardsAwayFromScene();
+
+        if (isIntro && response == "Welcome to the job.")
+        {
+            GameObject.Find("Jukebox").GetComponent<AutomaticSoundPlayer>().StartBackgroundSounds();
+            isIntro = false;
+        }
 
         if (response != "")
         {
@@ -83,9 +103,11 @@ public class Stats : MonoBehaviour
         yield return new WaitForSeconds(delay); // Wait for animations to finish
         if (CheckStatsForDefeat())
         {
+            GameObject.Find("Jukebox").GetComponent<AutomaticSoundPlayer>().SilenceAllSounds();
             Image bg = GameObject.Find("Black_bg").GetComponent<Image>();
             DOTween.To(() => bg.color, x => bg.color = x, new Color(0, 0, 0, 1.0f), 1.0f);
             expectingInput = false;
+            theEnd = true;
             yield break;
         }
 
