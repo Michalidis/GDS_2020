@@ -83,6 +83,8 @@ public class Stats : MonoBehaviour
         yield return new WaitForSeconds(delay); // Wait for animations to finish
         if (CheckStatsForDefeat())
         {
+            Image bg = GameObject.Find("Black_bg").GetComponent<Image>();
+            DOTween.To(() => bg.color, x => bg.color = x, new Color(0, 0, 0, 1.0f), 1.0f);
             expectingInput = false;
             yield break;
         }
@@ -109,7 +111,7 @@ public class Stats : MonoBehaviour
         else if (Finances.value <= 0.0f)
         {
             _deckManager._textManager.ClearSituationText();
-            _deckManager._textManager.UpdateSituationText("Poverty struck you hard and you eventually die. Maybe you wanted to be too fair without any greed?");
+            _deckManager._textManager.UpdateSituationText("Poverty struck you hard and you eventually die. Maybe you should have tried taking the job?");
             return true;
         }
         else if (Popularity.value >= 1.0f)
