@@ -446,38 +446,41 @@ MonoBehaviour:
         Doubt: 0
       Response: Most of the population gets scared that it will swallow up our whole
         planetary system
-  - SituationText: 
+  - SituationText: You notice a delivery car parking right in front of your door
+      every day
     CardChoices:
-    - Title: 
+    - Title: The army is trying to kill me for my latest reasearch
       Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
+        Finances: -0.1
+        Popularity: 0.17
+        Chaos: 0.17
+        Doubt: -0.17
+      Response: Your popularity explodes overnight
+    - Title: 'Review: The new Ice Cream World ice creams are perfect!'
       Effect:
-        Finances: -0.5
+        Finances: 0.15
         Popularity: 0
-        Chaos: 0
+        Chaos: -0.15
         Doubt: 0
-      Response: 
-  - SituationText: 
+      Response: You get a lot of money for their propagation and the population gets
+        more calm after eating a lot of ice cream.
+  - SituationText: A man collects 2111 Transformers action figures
     CardChoices:
-    - Title: 
+    - Title: Invasion of robots begin!
       Effect:
-        Finances: 0
-        Popularity: 0.5
-        Chaos: 0.5
-        Doubt: 0.5
-      Response: 
-    - Title: 
-      Effect:
-        Finances: -0.5
+        Finances: 0.25
         Popularity: 0
-        Chaos: 0
-        Doubt: 0
-      Response: 
+        Chaos: 0.06
+        Doubt: 0.05
+      Response: You raise a ton of money on fundraiser to stop the evil eutobots
+        from invading our planet
+    - Title: The most bizzare Guiness Book record
+      Effect:
+        Finances: -0.05
+        Popularity: 0.03
+        Chaos: -0.1
+        Doubt: -0.02
+      Response: People either don't believe it or are not interested in it
   _positionManager: {fileID: 0}
   _choiceManager: {fileID: 0}
   _textManager: {fileID: 0}
