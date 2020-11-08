@@ -40,7 +40,8 @@ public class Stats : MonoBehaviour
         if (Input.anyKey)
         {
             expectingInput = false;
-            float delay = Mathf.Max(2.0f - timeSpentExpectingInput, 0.0f);
+            float delay = Mathf.Max(2.0f - timeSpentExpectingInput, 1.0f);
+            _deckManager._textManager.ClearSituationText();
             StartCoroutine(PrepareNewChoice(delay));
         }
     }
@@ -63,16 +64,16 @@ public class Stats : MonoBehaviour
         _activeChoice = null;
 
         _deckManager._positionManager.MoveAllCardsAwayFromScene();
-        _deckManager._textManager.ClearSituationText();
 
         if (response != "")
         {
-            _deckManager._textManager.UpdateSituationText(response);
+            _deckManager._textManager.UpdateSituationText(response, false);
             expectingInput = true;
             timeSpentExpectingInput = 0.0f;
         }
         else
         {
+            _deckManager._textManager.ClearSituationText();
             StartCoroutine(PrepareNewChoice(2.0f));
         }
     }
@@ -82,6 +83,7 @@ public class Stats : MonoBehaviour
         yield return new WaitForSeconds(delay); // Wait for animations to finish
         if (CheckStatsForDefeat())
         {
+            expectingInput = false;
             yield break;
         }
 
